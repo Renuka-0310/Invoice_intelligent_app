@@ -1,6 +1,6 @@
 # Imports
 import streamlit as st
-import easyocr
+import pytesseract
 from PIL import Image
 import pandas as pd
 from extractor import extract_invoice_fields
@@ -12,16 +12,15 @@ st.title("📄 Intelligent Invoice Insights System")
 
 # File upload
 uploaded_files = st.file_uploader("Upload Invoice Images", type=["png", "jpg", "jpeg"], accept_multiple_files=True)
-reader = easyocr.Reader(['en'], gpu=False)
+
 
 results = []
 
 if uploaded_files:
     for file in uploaded_files:
         image = Image.open(file)
-        ocr_result = reader.readtext(image, detail=0)
-        text = " ".join(ocr_result)
-
+        text = pytesseract.image_to_string(image)
+       
         fields = extract_invoice_fields(text)
         classification = classify_invoice(text)
 
