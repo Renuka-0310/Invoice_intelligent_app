@@ -1,6 +1,5 @@
 streamlit
 easyocr
-pytesseract
+pillow
+pdf2image
 pandas
-Pillow
-matplotlib
