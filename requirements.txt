@@ -1,0 +1,6 @@
+streamlit
+easyocr
+pytesseract
+pandas
+Pillow
+matplotlib
