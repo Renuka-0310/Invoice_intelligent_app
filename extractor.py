@@ -36,8 +36,8 @@ def extract_invoice_fields(text):
     currency_match = re.search(r"(USD|EUR|INR|GBP|₹|\$|Rs\.?)", text)
     fields["Currency"] = currency_match.group(1) if currency_match else "Not Found"
 
-<<<<<<< HEAD
+
     return fields
-=======
+
     return fields
->>>>>>> 71091050ded3f19dfcda20015423e1af8865cb00
+
