@@ -12,7 +12,7 @@ st.title("📄 Intelligent Invoice Insights System")
 
 # File upload
 uploaded_files = st.file_uploader("Upload Invoice Images", type=["png", "jpg", "jpeg"], accept_multiple_files=True)
-reader = easyocr.Reader(['en', 'ar'])
+reader = easyocr.Reader(['en'], gpu=False)
 
 results = []
 
