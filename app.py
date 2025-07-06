@@ -82,4 +82,8 @@ if uploaded_files:
 
     # Type distribution
     st.subheader("📌 Invoice Type Distribution")
+<<<<<<< HEAD
     st.bar_chart(df["Type"].value_counts())
+=======
+    st.bar_chart(df["Type"].value_counts())
+>>>>>>> 71091050ded3f19dfcda20015423e1af8865cb00

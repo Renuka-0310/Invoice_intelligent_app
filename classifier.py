@@ -44,4 +44,8 @@ def classify_invoice(text):
     # Final confidence normalization
     classification["confidence"] = min(classification["confidence"] + 35, 100)
 
+<<<<<<< HEAD
     return classification
+=======
+    return classification
+>>>>>>> 71091050ded3f19dfcda20015423e1af8865cb00

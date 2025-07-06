@@ -3,4 +3,7 @@ easyocr
 pillow
 pdf2image
 pandas
+<<<<<<< HEAD
 
+=======
+>>>>>>> 71091050ded3f19dfcda20015423e1af8865cb00
