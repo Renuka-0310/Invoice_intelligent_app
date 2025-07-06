@@ -6,6 +6,8 @@ import pandas as pd
 from extractor import extract_invoice_fields
 from classifier import classify_invoice
 
+pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+
 # Setup
 st.set_page_config(page_title="Invoice Insight", layout="wide")
 st.title("📄 Intelligent Invoice Insights System")
